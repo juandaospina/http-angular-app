@@ -23,6 +23,10 @@ export class ListCardsComponent implements OnInit {
 
   public onHandlerScroll() {
     this.onLoadCards();
+    this.blockInfiniteScroll = true;
+    setTimeout(() => {
+      this.blockInfiniteScroll = !this.blockInfiniteScroll;
+    }, 2000)
   }
 
   public onLoadCards() {

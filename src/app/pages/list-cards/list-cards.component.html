@@ -5,6 +5,7 @@
     infiniteScroll
     [infiniteScrollDistance]="5"
     [infiniteScrollThrottle]="200"
+    [infiniteScrollDisabled]="blockInfiniteScroll"
     (scrolled)="onHandlerScroll()"
   >
     <app-card *ngFor="let card of cards" [card]="card"></app-card>
