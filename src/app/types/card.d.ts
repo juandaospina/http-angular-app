@@ -1,6 +1,6 @@
 export interface Data {
   data: Card[];
-  meta: Meta
+  meta?: Meta
 }
 
 export interface Card {
