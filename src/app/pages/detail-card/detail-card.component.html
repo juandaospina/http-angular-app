@@ -1,1 +1,28 @@
-<p>detail-card works!</p>
+<section class="details-card">
+  <div class="top">
+    <img [src]="card.card_images[0].image_url" [alt]="card.name" />
+  </div>
+
+  <div class="bottom">
+    <h2>{{ card.name }}</h2>
+    <div class="item">
+      <h3 class="title">{{ card.attribute }}</h3>
+      <p class="description">{{ card.desc }}</p>
+    </div>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Market</th>
+          <th scope="col">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"></th>
+          <td>Price</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
